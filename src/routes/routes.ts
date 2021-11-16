@@ -8,7 +8,7 @@ const router = express.Router();
 router.post("/add", async (req: Request, res: Response) => {
   const { title, description } = req.body;
 
-  const dataItem = Todo.set({ title, description });
+  const dataItem = Todo.set(req.body);
 
   await dataItem.save();
 
