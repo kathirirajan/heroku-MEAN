@@ -1,181 +1,181 @@
 import mongoose from "mongoose";
 
 interface TodoI {
-  "resource_state": {
-    "type": "Number"
+  resource_state: {
+    type: Number
   },
-  "athlete": {
-    "id": {
-      "type": "Number"
+  athlete: {
+    id: {
+      type: Number
     },
-    "resource_state": {
-      "type": "Number"
+    resource_state: {
+      type: Number
     }
   },
-  "name": {
-    "type": "String"
+  name: {
+    type: String
   },
-  "distance": {
-    "type": "Number"
+  distance: {
+    type: Number
   },
-  "moving_time": {
-    "type": "Number"
+  moving_time: {
+    type: Number
   },
-  "elapsed_time": {
-    "type": "Number"
+  elapsed_time: {
+    type: Number
   },
-  "total_elevation_gain": {
-    "type": "Number"
+  total_elevation_gain: {
+    type: Number
   },
-  "type": {
-    "type": "String"
+  type: {
+    type: String
   },
-  "id": {
-    "type": "Number"
+  id: {
+    type: Number
   },
-  "external_id": {
-    "type": "String"
+  external_id: {
+    type: String
   },
-  "upload_id": {
-    "type": "Number"
+  upload_id: {
+    type: Number
   },
-  "start_date": {
-    "type": "Date"
+  start_date: {
+    type: Date
   },
-  "start_date_local": {
-    "type": "Date"
+  start_date_local: {
+    type: Date
   },
-  "timezone": {
-    "type": "String"
+  timezone: {
+    type: String
   },
-  "utc_offset": {
-    "type": "Number"
+  utc_offset: {
+    type: Number
   },
-  "start_latlng": {
-    "type": [
-      "Number"
+  start_latlng: {
+    type: [
+      Number
     ]
   },
-  "end_latlng": {
-    "type": [
-      "Number"
+  end_latlng: {
+    type: [
+      Number
     ]
   },
-  "location_city": {
-    "type": "Mixed"
+  location_city: {
+    type: String
   },
-  "location_state": {
-    "type": "Mixed"
+  location_state: {
+    type: String
   },
-  "location_country": {
-    "type": "String"
+  location_country: {
+    type: String
   },
-  "start_latitude": {
-    "type": "Number"
+  start_latitude: {
+    type: Number
   },
-  "start_longitude": {
-    "type": "Number"
+  start_longitude: {
+    type: Number
   },
-  "achievement_count": {
-    "type": "Number"
+  achievement_count: {
+    type: Number
   },
-  "kudos_count": {
-    "type": "Number"
+  kudos_count: {
+    type: Number
   },
-  "comment_count": {
-    "type": "Number"
+  comment_count: {
+    type: Number
   },
-  "athlete_count": {
-    "type": "Number"
+  athlete_count: {
+    type: Number
   },
-  "photo_count": {
-    "type": "Number"
+  photo_count: {
+    type: Number
   },
-  "map": {
-    "id": {
-      "type": "String"
+  map: {
+    id: {
+      type: String
     },
-    "summary_polyline": {
-      "type": "String"
+    summary_polyline: {
+      type: String
     },
-    "resource_state": {
-      "type": "Number"
+    resource_state: {
+      type: Number
     }
   },
-  "trainer": {
-    "type": "Boolean"
+  trainer: {
+    type: Boolean
   },
-  "commute": {
-    "type": "Boolean"
+  commute: {
+    type: Boolean
   },
-  "manual": {
-    "type": "Boolean"
+  manual: {
+    type: Boolean
   },
-  "private": {
-    "type": "Boolean"
+  private: {
+    type: Boolean
   },
-  "visibility": {
-    "type": "String"
+  visibility: {
+    type: String
   },
-  "flagged": {
-    "type": "Boolean"
+  flagged: {
+    type: Boolean
   },
-  "gear_id": {
-    "type": "String"
+  gear_id: {
+    type: String
   },
-  "from_accepted_tag": {
-    "type": "Boolean"
+  from_accepted_tag: {
+    type: Boolean
   },
-  "upload_id_str": {
-    "type": "String"
+  upload_id_str: {
+    type: String
   },
-  "average_speed": {
-    "type": "Number"
+  average_speed: {
+    type: Number
   },
-  "max_speed": {
-    "type": "Number"
+  max_speed: {
+    type: Number
   },
-  "has_heartrate": {
-    "type": "Boolean"
+  has_heartrate: {
+    type: Boolean
   },
-  "average_heartrate": {
-    "type": "Number"
+  average_heartrate: {
+    type: Number
   },
-  "max_heartrate": {
-    "type": "Number"
+  max_heartrate: {
+    type: Number
   },
-  "heartrate_opt_out": {
-    "type": "Boolean"
+  heartrate_opt_out: {
+    type: Boolean
   },
-  "display_hide_heartrate_option": {
-    "type": "Boolean"
+  display_hide_heartrate_option: {
+    type: Boolean
   },
-  "pr_count": {
-    "type": "Number"
+  pr_count: {
+    type: Number
   },
-  "total_photo_count": {
-    "type": "Number"
+  total_photo_count: {
+    type: Number
   },
-  "has_kudoed": {
-    "type": "Boolean"
+  has_kudoed: {
+    type: Boolean
   },
-  "workout_type": {
-    "type": "Number"
+  workout_type: {
+    type: Number
   },
-  "average_watts": {
-    "type": "Number"
+  average_watts: {
+    type: Number
   },
-  "kilojoules": {
-    "type": "Number"
+  kilojoules: {
+    type: Number
   },
-  "device_watts": {
-    "type": "Boolean"
+  device_watts: {
+    type: Boolean
   },
-  "elev_high": {
-    "type": "Number"
+  elev_high: {
+    type: Number
   },
-  "elev_low": {
-    "type": "Number"
+  elev_low: {
+    type: Number
   }
 }
 
@@ -194,181 +194,181 @@ interface TodoDocument extends mongoose.Document {
 //   return response.body;
 // }
 const todoSchema = new mongoose.Schema({
-  "resource_state": {
-    "type": "Number"
+  resource_state: {
+    type: Number
   },
-  "athlete": {
-    "id": {
-      "type": "Number"
+  athlete: {
+    id: {
+      type: Number
     },
-    "resource_state": {
-      "type": "Number"
+    resource_state: {
+      type: Number
     }
   },
-  "name": {
-    "type": "String"
+  name: {
+    type: String
   },
-  "distance": {
-    "type": "Number"
+  distance: {
+    type: Number
   },
-  "moving_time": {
-    "type": "Number"
+  moving_time: {
+    type: Number
   },
-  "elapsed_time": {
-    "type": "Number"
+  elapsed_time: {
+    type: Number
   },
-  "total_elevation_gain": {
-    "type": "Number"
+  total_elevation_gain: {
+    type: Number
   },
-  "type": {
-    "type": "String"
+  type: {
+    type: String
   },
-  "id": {
-    "type": "Number"
+  id: {
+    type: Number
   },
-  "external_id": {
-    "type": "String"
+  external_id: {
+    type: String
   },
-  "upload_id": {
-    "type": "Number"
+  upload_id: {
+    type: Number
   },
-  "start_date": {
-    "type": "Date"
+  start_date: {
+    type: Date
   },
-  "start_date_local": {
-    "type": "Date"
+  start_date_local: {
+    type: Date
   },
-  "timezone": {
-    "type": "String"
+  timezone: {
+    type: String
   },
-  "utc_offset": {
-    "type": "Number"
+  utc_offset: {
+    type: Number
   },
-  "start_latlng": {
-    "type": [
-      "Number"
+  start_latlng: {
+    type: [
+      Number
     ]
   },
-  "end_latlng": {
-    "type": [
-      "Number"
+  end_latlng: {
+    type: [
+      Number
     ]
   },
-  "location_city": {
-    "type": "Mixed"
+  location_city: {
+    type: String
   },
-  "location_state": {
-    "type": "Mixed"
+  location_state: {
+    type: String
   },
-  "location_country": {
-    "type": "String"
+  location_country: {
+    type: String
   },
-  "start_latitude": {
-    "type": "Number"
+  start_latitude: {
+    type: Number
   },
-  "start_longitude": {
-    "type": "Number"
+  start_longitude: {
+    type: Number
   },
-  "achievement_count": {
-    "type": "Number"
+  achievement_count: {
+    type: Number
   },
-  "kudos_count": {
-    "type": "Number"
+  kudos_count: {
+    type: Number
   },
-  "comment_count": {
-    "type": "Number"
+  comment_count: {
+    type: Number
   },
-  "athlete_count": {
-    "type": "Number"
+  athlete_count: {
+    type: Number
   },
-  "photo_count": {
-    "type": "Number"
+  photo_count: {
+    type: Number
   },
-  "map": {
-    "id": {
-      "type": "String"
+  map: {
+    id: {
+      type: String
     },
-    "summary_polyline": {
-      "type": "String"
+    summary_polyline: {
+      type: String
     },
-    "resource_state": {
-      "type": "Number"
+    resource_state: {
+      type: Number
     }
   },
-  "trainer": {
-    "type": "Boolean"
+  trainer: {
+    type: Boolean
   },
-  "commute": {
-    "type": "Boolean"
+  commute: {
+    type: Boolean
   },
-  "manual": {
-    "type": "Boolean"
+  manual: {
+    type: Boolean
   },
-  "private": {
-    "type": "Boolean"
+  private: {
+    type: Boolean
   },
-  "visibility": {
-    "type": "String"
+  visibility: {
+    type: String
   },
-  "flagged": {
-    "type": "Boolean"
+  flagged: {
+    type: Boolean
   },
-  "gear_id": {
-    "type": "String"
+  gear_id: {
+    type: String
   },
-  "from_accepted_tag": {
-    "type": "Boolean"
+  from_accepted_tag: {
+    type: Boolean
   },
-  "upload_id_str": {
-    "type": "String"
+  upload_id_str: {
+    type: String
   },
-  "average_speed": {
-    "type": "Number"
+  average_speed: {
+    type: Number
   },
-  "max_speed": {
-    "type": "Number"
+  max_speed: {
+    type: Number
   },
-  "has_heartrate": {
-    "type": "Boolean"
+  has_heartrate: {
+    type: Boolean
   },
-  "average_heartrate": {
-    "type": "Number"
+  average_heartrate: {
+    type: Number
   },
-  "max_heartrate": {
-    "type": "Number"
+  max_heartrate: {
+    type: Number
   },
-  "heartrate_opt_out": {
-    "type": "Boolean"
+  heartrate_opt_out: {
+    type: Boolean
   },
-  "display_hide_heartrate_option": {
-    "type": "Boolean"
+  display_hide_heartrate_option: {
+    type: Boolean
   },
-  "pr_count": {
-    "type": "Number"
+  pr_count: {
+    type: Number
   },
-  "total_photo_count": {
-    "type": "Number"
+  total_photo_count: {
+    type: Number
   },
-  "has_kudoed": {
-    "type": "Boolean"
+  has_kudoed: {
+    type: Boolean
   },
-  "workout_type": {
-    "type": "Number"
+  workout_type: {
+    type: Number
   },
-  "average_watts": {
-    "type": "Number"
+  average_watts: {
+    type: Number
   },
-  "kilojoules": {
-    "type": "Number"
+  kilojoules: {
+    type: Number
   },
-  "device_watts": {
-    "type": "Boolean"
+  device_watts: {
+    type: Boolean
   },
-  "elev_high": {
-    "type": "Number"
+  elev_high: {
+    type: Number
   },
-  "elev_low": {
-    "type": "Number"
+  elev_low: {
+    type: Number
   }
 });
 
