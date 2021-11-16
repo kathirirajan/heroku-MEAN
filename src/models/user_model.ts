@@ -1,183 +1,70 @@
 import mongoose from "mongoose";
 
 interface TodoI {
-  resource_state: {
-    type: Number
-  },
-  athlete: {
-    id: {
-      type: Number
-    },
-    resource_state: {
-      type: Number
-    }
-  },
-  name: {
-    type: String
-  },
-  distance: {
-    type: Number
-  },
-  moving_time: {
-    type: Number
-  },
-  elapsed_time: {
-    type: Number
-  },
-  total_elevation_gain: {
-    type: Number
-  },
-  type: {
-    type: String
-  },
-  id: {
-    type: Number
-  },
-  external_id: {
-    type: String
-  },
-  upload_id: {
-    type: Number
-  },
-  start_date: {
-    type: Date
-  },
-  start_date_local: {
-    type: Date
-  },
-  timezone: {
-    type: String
-  },
-  utc_offset: {
-    type: Number
-  },
-  start_latlng: {
-    type: [
-      Number
-    ]
-  },
-  end_latlng: {
-    type: [
-      Number
-    ]
-  },
-  location_city: {
-    type: String
-  },
-  location_state: {
-    type: String
-  },
-  location_country: {
-    type: String
-  },
-  start_latitude: {
-    type: Number
-  },
-  start_longitude: {
-    type: Number
-  },
-  achievement_count: {
-    type: Number
-  },
-  kudos_count: {
-    type: Number
-  },
-  comment_count: {
-    type: Number
-  },
-  athlete_count: {
-    type: Number
-  },
-  photo_count: {
-    type: Number
-  },
-  map: {
-    id: {
-      type: String
-    },
-    summary_polyline: {
-      type: String
-    },
-    resource_state: {
-      type: Number
-    }
-  },
-  trainer: {
-    type: Boolean
-  },
-  commute: {
-    type: Boolean
-  },
-  manual: {
-    type: Boolean
-  },
-  private: {
-    type: Boolean
-  },
-  visibility: {
-    type: String
-  },
-  flagged: {
-    type: Boolean
-  },
-  gear_id: {
-    type: String
-  },
-  from_accepted_tag: {
-    type: Boolean
-  },
-  upload_id_str: {
-    type: String
-  },
-  average_speed: {
-    type: Number
-  },
-  max_speed: {
-    type: Number
-  },
-  has_heartrate: {
-    type: Boolean
-  },
-  average_heartrate: {
-    type: Number
-  },
-  max_heartrate: {
-    type: Number
-  },
-  heartrate_opt_out: {
-    type: Boolean
-  },
-  display_hide_heartrate_option: {
-    type: Boolean
-  },
-  pr_count: {
-    type: Number
-  },
-  total_photo_count: {
-    type: Number
-  },
-  has_kudoed: {
-    type: Boolean
-  },
-  workout_type: {
-    type: Number
-  },
-  average_watts: {
-    type: Number
-  },
-  kilojoules: {
-    type: Number
-  },
-  device_watts: {
-    type: Boolean
-  },
-  elev_high: {
-    type: Number
-  },
-  elev_low: {
-    type: Number
-  }
+  resource_state: number;
+  athlete: Athlete;
+  name: string;
+  distance: number;
+  moving_time: number;
+  elapsed_time: number;
+  total_elevation_gain: number;
+  type: string;
+  id: number;
+  external_id: string;
+  upload_id: number;
+  start_date: string;
+  start_date_local: string;
+  timezone: string;
+  utc_offset: number;
+  start_latlng?: (number)[] | null;
+  end_latlng?: (number)[] | null;
+  location_city?: null;
+  location_state?: null;
+  location_country: string;
+  start_latitude: number;
+  start_longitude: number;
+  achievement_count: number;
+  kudos_count: number;
+  comment_count: number;
+  athlete_count: number;
+  photo_count: number;
+  map: Map;
+  trainer: boolean;
+  commute: boolean;
+  manual: boolean;
+  private: boolean;
+  visibility: string;
+  flagged: boolean;
+  gear_id: string;
+  from_accepted_tag: boolean;
+  upload_id_str: string;
+  average_speed: number;
+  max_speed: number;
+  has_heartrate: boolean;
+  average_heartrate: number;
+  max_heartrate: number;
+  heartrate_opt_out: boolean;
+  display_hide_heartrate_option: boolean;
+  pr_count: number;
+  total_photo_count: number;
+  has_kudoed: boolean;
+  workout_type: number;
+  average_watts: number;
+  kilojoules: number;
+  device_watts: boolean;
+  elev_high: number;
+  elev_low: number;
 }
+interface Athlete {
+  id: number;
+  resource_state: number;
+}
+interface Map {
+  id: string;
+  summary_polyline: string;
+  resource_state: number;
+}
+
 
 interface TodoDocument extends mongoose.Document {
   title: string;
